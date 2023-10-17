@@ -31,13 +31,18 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-[85vh] flex justify-center items-center">
+    <div className="min-h-[80vh] flex justify-center items-center">
       {/* login form */}
       <form
         action="#"
-        className="relative space-y-10 bg-zinc-800/70 text-center rounded-3xl m-4 px-4 py-10 max-w-sm "
+        className="relative space-y-8 bg-zinc-800/70 text-center rounded-3xl m-4 px-4 py-10 max-w-sm "
       >
-        <h1 className="text-4xl font-bold">Welcome back</h1>
+        <div>
+          <h1 className="text-4xl font-bold">Welcome back</h1>
+          <p className="text-zinc-400 text-sm my-3">
+            Please Login to view Private blogs
+          </p>
+        </div>
 
         <div className="space-y-6">
           <input
