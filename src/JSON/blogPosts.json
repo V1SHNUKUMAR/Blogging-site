@@ -1,0 +1,114 @@
+{
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "title 1",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/10/personal-feed.png",
+      "category": "news",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Rahul Singh",
+      "date": "16 Oct 2023",
+      "visibility": "private"
+    },
+    {
+      "id": 2,
+      "title": "title 2",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/08/mantras11-final.png",
+      "category": "entertainment",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Varun kumar",
+      "date": "01 Oct 2023",
+      "visibility": "private"
+    },
+    {
+      "id": 3,
+      "title": "title 3",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/06/DSv5.png",
+      "category": "news",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Jyoti sengar",
+      "date": "16 Nov 2023",
+      "visibility": "private"
+    },
+    {
+      "id": 4,
+      "title": "title 4",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/04/KAIZEN.png",
+      "category": "sports",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Abhishek roy",
+      "date": "16 Oct 2023",
+      "visibility": "private"
+    },
+    {
+      "id": 5,
+      "title": "title 5",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/03/security-blog.png",
+      "category": "technology",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Anil sharma",
+      "date": "03 June 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 6,
+      "title": "title 6",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/03/wm-blog--2-.png",
+      "category": "technology",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Kirti mehra",
+      "date": "12 April 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 7,
+      "title": "title 7",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/03/dashboard-blog-c.png",
+      "category": "sports",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Virat kohli",
+      "date": "26 Aug 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 8,
+      "title": "title 8",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/02/11-Meesho-Mantras--1-.png",
+      "category": "technology",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Atul prajapati",
+      "date": "20 March 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 9,
+      "title": "title 9",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/02/bamboo2.png",
+      "category": "sports",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Shivam chaudhary",
+      "date": "01 Feb 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 10,
+      "title": "title 10",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/02/new3.png",
+      "category": "entertainment",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Harshita",
+      "date": "18 Feb 2023",
+      "visibility": "public"
+    },
+    {
+      "id": 11,
+      "title": "title 11",
+      "imageUrl": "https://admin.meesho.io/content/images/2023/06/DSv5.png",
+      "category": "news",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet at et fugiat alias unde distinctio magni facilis animi quibusdam!",
+      "author": "Arun singh",
+      "date": "16 Nov 2023",
+      "visibility": "public"
+    }
+  ]
+}
