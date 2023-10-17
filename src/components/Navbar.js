@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+
 import MyContext from "../context/myContext";
 
 const Navbar = () => {
@@ -8,6 +9,7 @@ const Navbar = () => {
 
   const logoUrl = "https://www.meesho.io/img/meesho-logo.png";
 
+  // to handle logout
   const handleLogout = () => {
     if (isLoggedIn) {
       toggleLogin();
@@ -34,6 +36,7 @@ const Navbar = () => {
             <li className="cursor-pointer text-teal-400">Blog</li>
             <li className="cursor-pointer">News</li>
           </ul>
+          {/* logout/login button */}
           <Link to={"/login"}>
             <button
               onClick={handleLogout}
@@ -42,6 +45,7 @@ const Navbar = () => {
               {isLoggedIn ? "Logout" : "Login"}
             </button>
           </Link>
+          {/* hamburger menu button */}
           <button className="p-2 text-3xl lg:hidden">
             <i className="ri-menu-line"></i>
           </button>

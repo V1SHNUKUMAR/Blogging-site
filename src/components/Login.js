@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import userData from "../JSON/userData.json";
-import { useNavigate } from "react-router-dom";
 import MyContext from "../context/myContext";
 
 const Login = () => {
@@ -32,6 +32,7 @@ const Login = () => {
 
   return (
     <div className="min-h-[85vh] flex justify-center items-center">
+      {/* login form */}
       <form
         action="#"
         className="relative space-y-10 bg-zinc-800/70 text-center rounded-3xl m-4 px-4 py-10 max-w-sm "
@@ -58,6 +59,7 @@ const Login = () => {
             placeholder="Enter your password"
           />
         </div>
+        {/* error msg */}
         <p ref={errorMsg} className="text-red-500 font-semibold hidden">
           Username or Password is wrong
         </p>

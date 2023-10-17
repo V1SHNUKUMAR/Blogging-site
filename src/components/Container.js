@@ -11,6 +11,7 @@ const Container = () => {
 
   const [blogs, setBlogs] = useState([]);
 
+  // to initialize blogs
   const initBlogs = () => {
     isLoggedIn
       ? setBlogs(blogPostsJSON.blogPosts)
@@ -21,6 +22,16 @@ const Container = () => {
         );
   };
 
+  // to filter blogs
+  const filterBlogs = (category) => {
+    const filteredBlogs = blogPostsJSON.blogPosts.filter((currBlog) =>
+      isLoggedIn
+        ? currBlog.category === category
+        : currBlog.category === category && currBlog.visibility === "public"
+    );
+    setBlogs(filteredBlogs);
+  };
+
   useEffect(() => {
     initBlogs();
   }, []);
@@ -28,66 +39,30 @@ const Container = () => {
   return (
     <section className="px-6 lg:px-16">
       <Hero />
-      {/* search and filter */}
+      {/* search and working filters */}
       <div className="flex flex-col-reverse justify-between items-center gap-4 pb-10 md:flex-row">
         <div>
           <ul className="flex justify-center items-center gap-4 flex-wrap lg:justify-start">
             <li
-              onClick={() => {
-                const filteredBlogs = blogPostsJSON.blogPosts.filter(
-                  (currBlog) =>
-                    isLoggedIn
-                      ? currBlog.category === "news"
-                      : currBlog.category === "news" &&
-                        currBlog.visibility === "public"
-                );
-                setBlogs(filteredBlogs);
-              }}
+              onClick={() => filterBlogs("news")}
               className="px-5 py-2 bg-zinc-600 rounded-full cursor-pointer hover:bg-blue-500"
             >
               News
             </li>
             <li
-              onClick={() => {
-                const filteredBlogs = blogPostsJSON.blogPosts.filter(
-                  (currBlog) =>
-                    isLoggedIn
-                      ? currBlog.category === "entertainment"
-                      : currBlog.category === "entertainment" &&
-                        currBlog.visibility === "public"
-                );
-                setBlogs(filteredBlogs);
-              }}
+              onClick={() => filterBlogs("entertainment")}
               className="px-5 py-2 bg-zinc-600 rounded-full cursor-pointer hover:bg-orange-500"
             >
               Entertainment
             </li>
             <li
-              onClick={() => {
-                const filteredBlogs = blogPostsJSON.blogPosts.filter(
-                  (currBlog) =>
-                    isLoggedIn
-                      ? currBlog.category === "sports"
-                      : currBlog.category === "sports" &&
-                        currBlog.visibility === "public"
-                );
-                setBlogs(filteredBlogs);
-              }}
+              onClick={() => filterBlogs("sports")}
               className="px-5 py-2 bg-zinc-600 rounded-full cursor-pointer hover:bg-violet-500"
             >
               Sports
             </li>
             <li
-              onClick={() => {
-                const filteredBlogs = blogPostsJSON.blogPosts.filter(
-                  (currBlog) =>
-                    isLoggedIn
-                      ? currBlog.category === "technology"
-                      : currBlog.category === "technology" &&
-                        currBlog.visibility === "public"
-                );
-                setBlogs(filteredBlogs);
-              }}
+              onClick={() => filterBlogs("technology")}
               className="px-5 py-2 bg-zinc-600 rounded-full cursor-pointer hover:bg-green-500"
             >
               Technology
